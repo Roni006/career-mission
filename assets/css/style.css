@@ -1,0 +1,277 @@
+/*
+AUTHOR NAME     : ANIK ISLAM
+TEMPLATE NAME   : CAREER MISSION
+VERSION         : 1.0.0
+*/
+
+
+/* ESSENTIAL CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+:root {
+    --global-font: "Poppins", sans-serif;
+    --border-bottom: #C6DBFF;
+    --header-bt: rgba(255, 255, 255, 0.6);
+    --body-bg: linear-gradient(339.32deg, #B8E7FA 35.75%, #E6E6FA 90.79%);
+    --white: #fff;
+    --black-color: #000;
+    --header-btn-color: #0D1321;
+    --header-btn-bg-color: linear-gradient(90deg, #FFA500 0%, #FFD447 100%);
+    --header-btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --hero-bg: #E6EDF9;
+    --web-deb-bg-color: #E6EDF9;
+    --target-box-bg: linear-gradient(180deg, #E6EDF9 0%, #9DE5FF 100%);
+    --target-box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    --fb-bg: linear-gradient(180deg, #00B2FF -0.91%, #006AFF 104.26%);
+    --linkedin-color: #2489BE;
+}
+
+
+body {
+    font-family: var(--global-font);
+    background: var(--body-bg);
+}
+
+/* FONTS SET UP  */
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1290px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.mb{
+    margin-bottom: 60px;
+}
+
+/* < !--JHEADER SECTION START --> */
+.header-section {
+    background: var(--header-bt);
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px 0;
+    border-bottom: 1px solid var(--border-bottom);
+}
+
+.header-btn {
+    color: var(--header-btn-color);
+    text-decoration: none;
+    background: var(--header-btn-bg-color);
+    padding: 18px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: var(--header-btn-shadow);
+    display: inline-block;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.header-right i {
+    background: var(--header-btn-bg-color);
+    padding: 15px 18px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+/* < !--JHEADER SECTION END --> */
+
+
+/* < !--HERO SECTION START --> */
+.hero-section {
+    padding: 70px 0;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 40px 60px;
+    background: var(--hero-bg);
+    border-radius: 16px;
+}
+
+.hero-title h1 {
+    margin: 32px 0 25px 0;
+}
+
+.hero-para p {
+    max-width: 852px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+/* < !--HERO SECTION END --> */
+
+
+/* < !--WEB DEV SECTION START --> */
+.web-dev {
+    padding: 70px 0;
+}
+
+.web-top {
+    text-align: center;
+}
+
+.web-title h2 {
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.web-text p {
+    max-width: 852px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.web-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    max-width: 1260px;
+    background-color: var(--web-deb-bg-color);
+    padding: 50px 50px;
+    border-radius: 16px;
+    margin-top: 50px;
+}
+
+.web-c-title h3 {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.web-c-text p {
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+/* < !--WEB DEV SECTION END --> */
+
+
+/* < !--INSPIRATION SECTION START --> */
+.inspiration {
+    padding: 70px 0;
+}
+
+.inspiration-video iframe {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 16px;
+}
+
+/* < !--INSPIRATION SECTION END --> */
+
+/* < !--TARGETR SECTION START --> */
+.target-section {
+    padding: 70px 0;
+}
+
+.target-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 30px;
+}
+.target1 {
+    max-width: 520px;
+    background-color: var(--target-box-bg);
+    box-shadow: var(--target-box-shadow);
+    padding: 40px 40px;
+    margin-top: 50px;
+    border-radius: 16px;
+    transition: 0.2s;
+}
+.target1:hover{  
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.target-img img{
+    max-width: 100%;
+}
+.target-title h3{
+    margin: 25px 0 15px 0;
+}
+.target-text{
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.target-btn a{
+    display: inline-block; 
+    color: var(--header-btn-color); 
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    box-shadow: var(--header-btn-shadow); 
+    transition: 0.2s;
+}
+.target-btn a:hover{ 
+    background: var(--header-btn-bg-color);
+}
+/* < !--TARGETR SECTION END --> */
+
+/* < !--FOOTER SECTION START --> */
+.footer-section{ 
+    margin-top: 70px;
+    background-color: var(--header-bt);
+}
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.icons{
+    display: flex; 
+    gap: 15px;
+    font-size: 30px; 
+    cursor: pointer;
+}
+.icons .fa-facebook{
+    color: blue;
+}
+.icons .fa-github{
+    color: var(--header-btn-color)
+}
+.icons .fa-linkedin{
+    color: var(--linkedin-color)
+}
+/* < !--FOOTER SECTION END --> */
